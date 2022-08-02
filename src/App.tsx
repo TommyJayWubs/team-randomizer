@@ -31,9 +31,13 @@ function App() {
           Shuffle
         </button>
       </div>
-      <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
-        <TeamDisplay teamNumber={1} teamPlayers={teamOne} playersDispatch={playersDispatch}/>
-        <TeamDisplay teamNumber={2} teamPlayers={teamTwo} playersDispatch={playersDispatch}/>
+      <div style={{display: 'flex'}}>
+        <div style={{flex: '50%'}}>
+          <TeamDisplay teamNumber={1} teamPlayers={teamOne} playersDispatch={playersDispatch}/>
+        </div>
+        <div style={{flex: '50%'}}>
+          <TeamDisplay teamNumber={2} teamPlayers={teamTwo} playersDispatch={playersDispatch}/>
+        </div>
       </div>
     </div>
   )
