@@ -1,0 +1,42 @@
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  margin-right: 0.3rem;
+  max-width: 20vw;
+}
+
+button {
+  border: 2px solid;
+  border-radius: 5%;
+  background-color: yellowgreen;
+  border-color: yellowgreen;
+}
+
+button.small {
+  aspect-ratio: 1;
+  border-radius: 20%;
+}
+
+button.red {
+  color: white;
+  border-color: red;
+  background-color: red;
+}
+
+button.teal {
+  color: white;
+  border-color: teal;
+  background-color: teal;
+}
