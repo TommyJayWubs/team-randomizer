@@ -1,6 +1,5 @@
 import { ChangeEvent, Dispatch } from "react"
 import { Player, PlayersAction } from "./playersReducer"
-import { useAutoAnimate } from '@formkit/auto-animate/react'
 
 type PlayerDisplayProps = {
   player: Player,
@@ -31,12 +30,10 @@ type TeamDisplayProps = {
 }
 
 export function TeamDisplay({teamNumber, teamPlayers, playersDispatch} : TeamDisplayProps) {
-  const [parent] = useAutoAnimate<HTMLDivElement>()
-
   return (
     <div>
       <h3> Team {teamNumber} </h3>
-      <div ref={parent}>
+      <div>
         {teamPlayers.map(player => 
           <PlayerDisplay 
             key={player.id} 
